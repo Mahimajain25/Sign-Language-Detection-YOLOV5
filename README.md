@@ -19,7 +19,7 @@ Let's communicate, connect and learn American Sign Language
 
 - **Model Training:** You Only Look Once Model **(YOLO V5)** model is used for training. Training is done on COLAB NOTEBOOK with GPU. [Notebook](https://github.com/Mahimajain25/Sign-Language-Detection-YOLOV5/blob/main/Sign_language_Generation.ipynb)
 
-- **MOdel Evaluation** Training losses and performance metrics are saved to Tensorboard.
+- **Model Evaluation** Training losses and performance metrics are saved to Tensorboard.
 
 - **Model Detection :** Best weights are used for Real-Time detection and for image prediction.
 
