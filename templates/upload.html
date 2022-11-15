@@ -1,0 +1,51 @@
+{% extends 'header.html' %}
+{% block content %}
+<!doctype html>
+<html lang="en">
+  <title>Index</title>
+<head>
+  <!-- Bootstrap CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css", rel="stylesheet">
+  <script src ="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"> </script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+  <link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet">
+  <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"  rel="stylesheet">
+  -->
+  </head>
+
+<body>
+  <form action = "http://localhost:5000/uploader" method = "POST" 
+     enctype = "multipart/form-data">
+<div class="row">
+  <div class="w-full p-4">
+  <div class="w-full p-5">
+          <div class="w-full p-3">
+              <div class="relative border-dotted h-48 rounded-lg border-dashed border-2 border-blue-700 bg-gray-100 flex justify-center items-center">
+
+                <div class="absolute"> 
+                  <div class="flex flex-col items-center">
+                    <i class="fa fa-folder-open fa-4x text-blue-700"></i>
+                  <span class="block text-gray-400 font-normal">select Image for detection</span>
+                  </div>
+                </div>
+
+                <input type="file" class="h-full w-full opacity-0" name="file" id="file" >
+
+              </div>
+          </div>
+     
+      <p style="text-align:right;">
+        <input type = "submit"  
+        style="float:center;width:80px;height:25px;margin-top: 20px;
+        margin-left: 10px;background-color: #2C50CE;color: white"/>
+      </p>
+  </div>
+    </div>
+</div>
+  </form>
+</body>
+</html>
+{% endblock %}
+

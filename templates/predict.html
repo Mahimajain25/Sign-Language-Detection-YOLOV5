@@ -1,0 +1,33 @@
+{% extends 'header.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+</head>
+<body>
+    <!--<table style="width:100%;text-align: center;">
+        <tr>
+          <th>uploaded img</th>
+          <th>Prediction img</th>
+        </tr>
+        
+        <tr>
+            <td><img src="{{ user_image }}" alt="uploaded_img" height="240px" width="300px"></td>
+            <td><img src="{{ pred_image }}" alt="predicted_img" height="240px" width="300px"></td>
+          </tr>
+    </table>-->
+<!-- <img src="{{ user_image }}" alt="uploaded_img" height="240px" width="300px">
+-->
+{% for i in imagelist %}
+  {%if imagelist.index(i) == 0 %}
+    <h1>Uploaded Img</h1>
+  {% else %}
+    <h1>Predicted Img</h1>
+  {% endif %}
+<img src = "{{ url_for('static', filename=i)}}"  height="240px" width="300px" style="align-items:center;text-align: center;">
+{% endfor %}
+</body>
+</html>
+{% endblock %}
