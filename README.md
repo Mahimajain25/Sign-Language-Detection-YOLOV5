@@ -1,10 +1,10 @@
-# ASL Sign-Language-Detection-YOLOV5
+# American Sign Language Detection 🤟
 - A real time software system that will be able to recognize ASL hand-gestures using deep learning techniques.
 - This project aims to predict the 'alphabet' gesture of the ASL.
 ![ASL_Home](https://user-images.githubusercontent.com/96101074/201936672-67f1e866-22f0-44e5-ae2e-f9672765b7b3.png)
 
-“Blindness cuts us off from things, but deafness cuts us off from people." - Helen Keller
-Let's comunicate, connect and learn American Sign Language  
+“Blindness cuts us off from things, but deafness cuts us off from people." - Helen Keller <br>
+Let's communicate, connect and learn American Sign Language 
 
 # Demo 
 - **Real-Time ASL Detection**
@@ -13,8 +13,8 @@ Let's comunicate, connect and learn American Sign Language
 ![D_ASL_predimg](https://user-images.githubusercontent.com/96101074/201934423-7278b270-74f2-4c77-b8fe-6efe21baff46.png)
 
 # Project Overview
-- **Dataset :** 
-**Training Dataset:** Downloaded from Roboflow. [ASLDataset_YOLOv5_pytorch](https://public.roboflow.com/object-detection/american-sign-language-letters/1/download/yolov5pytorch )
+- **Dataset :** <br>
+**Training Dataset:** Downloaded from Roboflow. [ASLDataset_YOLOv5_pytorch](https://public.roboflow.com/object-detection/american-sign-language-letters/1/download/yolov5pytorch )<br>
 **Testing Dataset:** Clicked sample Img for 'HELLO' word using Opencv lib and annotated with **LabelImg lib**.
 
 - **Model Training:** You Only Look Once Model **(YOLO V5)** model is used for training. Training is done on COLAB NOTEBOOK with GPU. [Notebook](https://github.com/Mahimajain25/Sign-Language-Detection-YOLOV5/blob/main/Sign_language_Generation.ipynb)
